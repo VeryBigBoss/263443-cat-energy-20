@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Антон](https://up.htmlacademy.ru/adaptive/20/user/263443).
-* Наставник: Михаил Поднаев.
+* Наставник: [Михаил Поднаев](https://up.htmlacademy.ru/adaptive/20/user/).
 
 ---
 
