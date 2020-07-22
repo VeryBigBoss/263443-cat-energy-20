@@ -36,11 +36,11 @@
       <ul class="cat-data__list">
         <li class="cat-data__item">
           <label class="cat-data__input-label" for="cat-name">Имя:*</label>
-          <input id="cat-name" class="cat-data__input" type="text" name="cat-name" placeholder="Барсик">
+          <input id="cat-name" class="cat-data__input" type="text" name="cat-name" placeholder="Барсик" required>
         </li>
         <li class="cat-data__item">
           <label class="cat-data__input-label" for="cat-weight">Вес (кг):*</label>
-          <input id="cat-weight" class="cat-data__input" type="text" name="cat-weight" placeholder="7">
+          <input id="cat-weight" class="cat-data__input" type="text" name="cat-weight" placeholder="7" required>
         </li>
         <li class="cat-data__item">
           <label class="cat-data__input-label" for="cat-age">Возраст (лет):</label>
@@ -68,23 +68,21 @@
       <h3 class="contacts__title">Контактные данные (владельца кота)</h3>
       <ul class="contacts__list">
         <li class="contacts__item">
-          <label class="contacts__input-label" for="contacts-email">Email</label>
-          <input id="contacts-email" class="contacts__email-input" type="email" name="contacts-email"
-                 placeholder="kuklachev@gmail.com">
+          <label class="contacts__input-label" for="contacts-email">Email:*</label>
+          <input id="contacts-email" class="contacts__email-input" type="email" name="contacts-email" placeholder="kuklachev@gmail.com" required>
         </li>
         <li class="contacts__item">
           <label class="contacts__input-label" for="contacts-phone">Телефон:*</label>
-          <input id="contacts-phone" class="contacts__email-input" type="email" name="contacts-phone"
-                 placeholder="8 (960) 900-60-90">
+          <input id="contacts-phone" class="contacts__email-input" type="text" name="contacts-phone" placeholder="8 (960) 900-60-90" required>
         </li>
       </ul>
     </section>
     <section class="comment">
       <h3 class="comment__title">Комментарий</h3>
-      <textarea id="comment-description" class="comment__description" name="comment-description"
-                placeholder="Расскажите обо всех повАдках кота" rows="5" cols="20"></textarea>
+      <textarea id="comment-description" class="comment__description" name="comment-description" placeholder="Расскажите обо всех повАдках кота" rows="5" cols="20"></textarea>
     </section>
     <section class="addition">
+      <h3 class="addition__title">Дополнительно</h3>
       <ul class="addition__list">
         <li class="addition__item">
           <input id="addition-sugar" class="addition__input" type="checkbox" name="addition-sugar" checked>
