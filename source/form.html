@@ -8,8 +8,7 @@
 <header class="page-header">
   <nav class="main-nav">
     <a href="index.html" class="logo">
-      <img src="https://via.placeholder.com/34x38" width="34" height="38" alt="Логотип">
-      <img src="https://via.placeholder.com/34x38" width="34" height="38" alt="CAT ENERGY">
+      <img src="https://via.placeholder.com/34x38" width="34" height="38" alt="Логотип CAT ENERGY">
     </a>
     <button class="main-nav__toggle" type="button">
       <span class="visually-hidden">Открыть меню</span>
@@ -30,10 +29,95 @@
   </nav>
 </header>
 <main class="page-main">
+  <h1 class="page-main__title">Подбор программы</h1>
+  <form class="form" method="post" action="https://echo.htmlacademy.ru">
+    <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <section class="form__cat-data cat-data">
+      <ul class="cat-data__list">
+        <li class="cat-data__item">
+          <label class="cat-data__input-label" for="cat-name">Имя:*</label>
+          <input id="cat-name" class="cat-data__input" type="text" name="cat-name" placeholder="Барсик" required>
+        </li>
+        <li class="cat-data__item">
+          <label class="cat-data__input-label" for="cat-weight">Вес (кг):*</label>
+          <input id="cat-weight" class="cat-data__input" type="text" name="cat-weight" placeholder="7" required>
+        </li>
+        <li class="cat-data__item">
+          <label class="cat-data__input-label" for="cat-age">Возраст (лет):</label>
+          <input id="cat-age" class="cat-data__input" type="text" name="cat-age" placeholder="7">
+        </li>
+      </ul>
+    </section>
+    <section class="form__target target">
+      <ul class="target__list">
+        <li class="target__item">
+          <input id="target-slim" class="target__input" type="radio" name="target" value="target-slim" checked>
+          <label class="target__input-label" for="target-slim">Похудение</label>
+        </li>
+        <li class="target__item">
+          <input id="target-weight" class="target__input" type="radio" name="target" value="target-weight">
+          <label class="target__input-label" for="target-weight">Набор массы</label>
+        </li>
+        <li class="target__item">
+          <input id="target-other" class="target__input" type="radio" name="target" value="target-other">
+          <label class="target__input-label" for="target-other">Не знаю (Нужен ваш совет)</label>
+        </li>
+      </ul>
+    </section>
+    <section class="contacts">
+      <h3 class="contacts__title">Контактные данные (владельца кота)</h3>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <label class="contacts__input-label" for="contacts-email">Email:*</label>
+          <input id="contacts-email" class="contacts__email-input" type="email" name="contacts-email" placeholder="kuklachev@gmail.com" required>
+        </li>
+        <li class="contacts__item">
+          <label class="contacts__input-label" for="contacts-phone">Телефон:*</label>
+          <input id="contacts-phone" class="contacts__email-input" type="text" name="contacts-phone" placeholder="8 (960) 900-60-90" required>
+        </li>
+      </ul>
+    </section>
+    <section class="comment">
+      <h3 class="comment__title">Комментарий</h3>
+      <textarea id="comment-description" class="comment__description" name="comment-description" placeholder="Расскажите обо всех повАдках кота" rows="5" cols="20"></textarea>
+    </section>
+    <section class="addition">
+      <h3 class="addition__title">Дополнительно</h3>
+      <ul class="addition__list">
+        <li class="addition__item">
+          <input id="addition-sugar" class="addition__input" type="checkbox" name="addition-sugar" checked>
+          <label class="addition__input-label" for="addition-sugar">Сахарозаменитель</label>
+        </li>
+        <li class="addition__item">
+          <input id="addition-water" class="addition__input" type="checkbox" name="addition-water">
+          <label class="addition__input-label" for="addition-water">Питьевая вода</label>
+        </li>
+        <li class="addition__item">
+          <input id="addition-milk" class="addition__input" type="checkbox" name="addition-milk">
+          <label class="addition__input-label" for="addition-milk">Молоко</label>
+        </li>
+        <li class="addition__item">
+          <input id="addition-vitamins" class="addition__input" type="checkbox" name="addition-vitamins">
+          <label class="addition__input-label" for="addition-vitamins">Витамины</label>
+        </li>
+      </ul>
+    </section>
+    <button type="submit">Отправить заявку</button>
+    <small class="form__note">
+      * — обязательные поля
+    </small>
+  </form>
+  <section class="address">
+    <p class="address__tagline">приглашаем к сотрудничеству дилеров!</p>
+    <p class="address__contacts">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+  </section>
+  <section class="location">
+    <iframe src="https://via.placeholder.com/150x150" width="150" height="150">
+    </iframe>
+  </section>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a href="#" class="logo">
-        <img class="visually-hidden" src="https://via.placeholder.com/34x38" width="34" height="38" alt="Логотип">
         <img src="https://via.placeholder.com/34x38" width="34" height="38" alt="CAT ENERGY">
       </a>
       <ul class="social">
