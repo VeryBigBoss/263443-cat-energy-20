@@ -3,10 +3,6 @@
   outline-offset: -1px;
 }
 
-.products-card__image {
-
-}
-
 .products-card__title {
   margin: 0 0 20px 0;
   font-size: 16px;
@@ -16,16 +12,12 @@
   text-transform: uppercase;
 }
 
-.products-card__description {
-
-}
-
 .description {
   margin-bottom: 22px;
 }
 
 .description__item {
-  font-family: "Arial";
+  font-family: $font-family-second;
   font-size: 12px;
   line-height: 16px;
   font-weight: normal;
