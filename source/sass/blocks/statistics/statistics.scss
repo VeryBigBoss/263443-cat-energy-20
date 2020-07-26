@@ -1,30 +1,4 @@
-@import "../../variables.scss";
-
 .statistics {
+  padding: 25px 20px 30px;
   background: #eaeaea;
-}
-
-.statistics__number {
-  font-size: 24px;
-  line-height: 24px;
-  color: $color-title;
-}
-
-.statistics__description {
-  font-size: 12px;
-  line-height: 12px;
-}
-
-.statistics__legend {
-  font-size: 14px;
-  line-height: 20px;
-  color: $color-title;
-  text-transform: uppercase;
-}
-
-.slider__toggle {
-  font-size: 16px;
-  line-height: 20px;
-  color: $color-title;
-  text-transform: uppercase;
 }

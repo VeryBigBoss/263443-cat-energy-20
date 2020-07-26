@@ -1,0 +1,9 @@
+@import "../../../variables";
+
+.cat-data__input {
+  font-family: $font-family;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-grey;
+  text-transform: uppercase;
+}
