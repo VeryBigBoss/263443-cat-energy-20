@@ -1,7 +1,10 @@
 @import "variables.scss";
 @import "blocks/page__body.scss";
 @import "blocks/page-header/page-header";
-@import "blocks/main-nav/main-nav";
+@import "blocks/page-header/main-nav/main-nav.scss";
+@import "blocks/page-header/main-nav/site-list/site-list.scss";
+@import "blocks/page-header/main-nav/site-list/site-list__item.scss";
+@import "blocks/page-header/main-nav/site-list/site-list__link.scss";
 @import "blocks/promo/promo.scss";
 @import "blocks/promo/promo__title.scss";
 @import "blocks/promo/promo__slogan.scss";
