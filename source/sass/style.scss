@@ -1,1 +1,71 @@
-// Начните писать стили здесь
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff");
+  src: url("../fonts/oswaldmedium.woff2");
+  src: url("../fonts/oswaldregular.woff");
+  src: url("../fonts/oswaldregular.woff2");
+}
+
+$font-family: "Oswald", "Arial";
+$font-weight: normal;
+$color-title: #000000;
+$color-content: #444444;
+
+.page__body {
+  font-family: $font-family;
+  font-size: 16px;
+  font-weight: $font-weight;
+  padding: 0;
+  margin: 0 auto;
+  width: 320px;
+  color: $color-content;
+  background: #ffffff;
+}
+
+@import "blocks/header/header.scss";
+@import "blocks/header/main-nav.scss";
+@import "blocks/promo/promo.scss";
+@import "blocks/promo/promo__title.scss";
+@import "blocks/promo/promo__slogan.scss";
+@import "blocks/promo/promo__choose-program.scss";
+@import "blocks/programs/programs.scss";
+@import "blocks/programs/programs__title.scss";
+@import "blocks/programs/programs__item.scss";
+@import "blocks/programs/programs__description.scss";
+@import "blocks/programs/programs__choose.scss";
+@import "blocks/features/features.scss";
+@import "blocks/features/features__title.scss";
+@import "blocks/features/features__list.scss";
+@import "blocks/features/features__item.scss";
+@import "blocks/features/features__description.scss";
+@import "blocks/statistics/statistics.scss";
+@import "blocks/statistics/statistics__title.scss";
+@import "blocks/statistics/statistics__description.scss";
+@import "blocks/statistics/statistics__list.scss";
+@import "blocks/statistics/statistics__item.scss";
+@import "blocks/address/address.scss";
+@import "blocks/address/address__tagline.scss";
+@import "blocks/address/address__contacts.scss";
+@import "blocks/location/location.scss";
+@import "blocks/footer/page-footer.scss";
+@import "blocks/socials/social.scss";
+@import "blocks/socials/social__link.scss";
+@import "blocks/copyright/copyright.scss";
+@import "blocks/copyright/copyright__link.scss";
+@import "blocks/page-main__title";
+@import "blocks/catalog/products.scss";
+@import "blocks/catalog/products__list.scss";
+@import "blocks/catalog/products__item.scss";
+@import "blocks/catalog/products-card.scss";
+@import "blocks/catalog/products-card__to-order.scss";
+@import "blocks/catalog-separator/separator-hidden.scss";
+@import "blocks/catalog-separator/separator-hidden__title.scss";
+@import "blocks/catalog-separator/separator-hidden__tagline.scss";
+@import "blocks/catalog-separator/separator-hidden__button-show.scss";
+@import "blocks/products-additional/products-additional.scss";
+@import "blocks/products-additional/products-additional__title.scss";
+@import "blocks/products-additional/products-additional__list.scss";
+@import "blocks/products-additional/products-additional__item.scss";
+@import "blocks/products-additional/products-additional-card.scss";
+@import "blocks/gift/gift.scss";
+@import "blocks/gift/gift__description.scss";

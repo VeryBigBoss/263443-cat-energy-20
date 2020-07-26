@@ -1,0 +1,9 @@
+.programs__item {
+  margin-bottom: 30px;
+  padding: 20px 20px 30px;
+  background: #F2F2F2;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

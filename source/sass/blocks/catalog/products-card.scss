@@ -1,0 +1,32 @@
+.products-card {
+  outline: 1px solid blue;
+  outline-offset: -1px;
+}
+
+.products-card__image {
+
+}
+
+.products-card__title {
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  color: $color-title;
+  text-transform: uppercase;
+}
+
+.products-card__description {
+
+}
+
+.description {
+  margin-bottom: 22px;
+}
+
+.description__item {
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+}

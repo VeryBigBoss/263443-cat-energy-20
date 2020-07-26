@@ -1,0 +1,31 @@
+.features__item {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 60px;
+  min-height: 60px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.features__item--benefit:before {
+  background: #68B738 url("../img/advantage-leaf@1x.png") no-repeat;
+}
+
+.features__item--consistency:before {
+  background: #68B738 url("../img/advantage-powder@1x.png") no-repeat;
+}
+
+.features__item--eat:before {
+  background: #68B738 url("../img/advantage-dining@1x.png") no-repeat;
+}
+
+.features__item--time:before {
+  background: #68B738 url("../img/advantage-clock@1x.png") no-repeat;
+}
