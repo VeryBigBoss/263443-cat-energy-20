@@ -3,3 +3,38 @@
   outline: 20px solid #ffb241;
   outline-offset: -20px;
 }
+
+.programs__title {
+  margin: 0 0 30px;
+  font-size: 24px;
+  line-height: 37px;
+  color: $color-black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.programs__item {
+  margin-bottom: 30px;
+  padding: 20px 20px 30px;
+  background: #f2f2f2;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.programs__description {
+  margin: 0 0 40px;
+  font-family: $font-family-second;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.programs__choose {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: normal;
+  color: $color-black;
+  text-transform: uppercase;
+  text-decoration: none;
+}

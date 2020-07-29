@@ -4,3 +4,47 @@
   outline: 20px solid tomato;
   outline-offset: -20px;
 }
+
+.products-card {
+  outline: 1px solid blue;
+  outline-offset: -1px;
+}
+
+.products-card__title {
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  color: $color-black;
+  text-transform: uppercase;
+}
+
+.description {
+  margin-bottom: 22px;
+}
+
+.description__item {
+  font-family: $font-family-second;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+}
+
+.products-card__to-order {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.products__item {
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.products__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

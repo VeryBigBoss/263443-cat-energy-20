@@ -4,3 +4,26 @@
   outline: 20px solid #ffb241;
   outline-offset: -20px;
 }
+
+.separator-hidden__title {
+  margin: 0 0 7px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-black;
+  text-transform: uppercase;
+}
+
+.separator-hidden__tagline {
+  margin: 0 0 20px;
+  font-family: $font-family-second;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+}
+
+.separator-hidden__button-show {
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-grey;
+  background: #f2f2f2;
+}

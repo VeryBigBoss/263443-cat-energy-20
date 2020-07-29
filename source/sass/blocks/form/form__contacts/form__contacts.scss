@@ -1,0 +1,43 @@
+.contacts {
+  margin: 0;
+  padding: 0 20px 25px;
+  outline: 1px solid green;
+  outline-offset: -1px;
+}
+
+.contacts__title {
+  margin: 0 0 30px;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: normal;
+  color: $color-black;
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts__item {
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__email-input {
+  font-family: $font-family;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $color-grey;
+}
+
+.contacts__input-label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}

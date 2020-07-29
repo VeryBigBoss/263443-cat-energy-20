@@ -4,3 +4,27 @@
   outline: 1px solid tomato;
   outline-offset: -1px;
 }
+
+.form__description {
+  margin: 0 0 40px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: $color-black;
+  text-transform: uppercase;
+}
+
+.form__button {
+  font-family: $font-family;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+}
+
+.form__note {
+  margin: 20px 0 30px;
+  font-family: $font-family-second;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-black;
+}

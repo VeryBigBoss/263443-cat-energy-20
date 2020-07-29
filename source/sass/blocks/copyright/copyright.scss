@@ -1,3 +1,13 @@
 .copyright {
   margin: 0;
 }
+
+.copyright__link {
+  text-decoration: none;
+}
+
+.copyright__link--text {
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-grey;
+}
