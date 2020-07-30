@@ -1,11 +1,11 @@
-.addition {
+.form-addition {
   margin: 0;
   padding: 0 20px 35px;
   outline: 1px solid green;
   outline-offset: -1px;
 }
 
-.addition__title {
+.form-addition__title {
   margin: 0 0 34px;
   font-size: 24px;
   line-height: 26px;
@@ -13,13 +13,13 @@
   color: $color-black;
 }
 
-.addition__list {
+.form-addition__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.addition__item {
+.form-addition__item {
   margin-bottom: 12px;
 
   &:last-child {
@@ -27,7 +27,7 @@
   }
 }
 
-.addition__input-label {
+.form-addition__input-label {
   font-size: 16px;
   line-height: 16px;
   color: $color-black;

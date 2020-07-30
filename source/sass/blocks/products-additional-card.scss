@@ -1,0 +1,24 @@
+.products-additional-card {
+  outline: 1px solid green;
+}
+
+.products-additional-card__title {
+  margin: 0 0 13px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: normal;
+  color: $color-black;
+  text-transform: uppercase;
+}
+
+.products-additional-card__description {
+  margin: 0 0 15px;
+}
+
+.products-additional-card__item {
+  font-family: $font-family-second;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: normal;
+  color: $color-grey;
+}
