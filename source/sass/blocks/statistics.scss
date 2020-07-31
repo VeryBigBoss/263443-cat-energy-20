@@ -1,0 +1,39 @@
+.statistics {
+  padding: 25px 20px 30px;
+  background: #eaeaea;
+}
+
+.statistics__title {
+  margin: 0 0 30px;
+  font-size: 36px;
+  line-height: 40px;
+  color: $color-black;
+}
+
+.statistics__description {
+  margin: 0;
+  font-family: $font-family-second;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.statistics__tagline {
+  margin: 0;
+  font-family: $font-family-second;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.statistics__number {
+  font-size: 24px;
+  line-height: 24px;
+  color: $color-black;
+}
+
+.statistics__legend {
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-black;
+  text-transform: uppercase;
+}

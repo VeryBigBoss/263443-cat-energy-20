@@ -1,0 +1,21 @@
+.address {
+  padding: 25px 20px;
+  outline: 20px solid tomato;
+  outline-offset: -20px;
+}
+
+.address__contacts {
+  margin: 0;
+  font-family: $font-family-second;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.address__tagline {
+  margin: 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  color: $color-black;
+  text-transform: uppercase;
+}

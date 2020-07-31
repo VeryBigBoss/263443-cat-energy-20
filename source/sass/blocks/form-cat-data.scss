@@ -1,0 +1,29 @@
+.form-cat-data {
+  outline: 1px solid green;
+  outline-offset: -1px;
+}
+
+.form-cat-data__list {
+  margin: 0;
+  padding: 0 0 25px;
+  list-style: none;
+}
+
+.form-cat-data__item {
+  margin-bottom: 13px;
+}
+
+.form-cat-data__input {
+  font-family: $font-family;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-grey;
+  text-transform: uppercase;
+}
+
+.form-cat-data__input-label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
