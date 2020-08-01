@@ -3,3 +3,10 @@
   font-size: 0;
   text-transform: uppercase;
 }
+
+.main-nav__toggle {
+  width: 24px;
+  height: 16px;
+  border: none;
+  background: #ffffff url("../img/icon-mobile-menu.svg") no-repeat;
+}
