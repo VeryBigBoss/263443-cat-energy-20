@@ -6,6 +6,12 @@
   background: #68b738 url("../img/gift-photo-mobile@1x.jpg") no-repeat;
   text-align: center;
   text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 245px;
+    height: 289px;
+  }
 }
 
 .gift__description {
