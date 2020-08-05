@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -14,19 +15,17 @@
     <button class="main-nav__toggle" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__link" href="index.html">Главная</a>
-        </li>
-        <li class="site-list__item site-list__item--active">
-          <a class="site-list__link">Каталог продукции</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="form.html">Подбор программы</a>
-        </li>
-      </ul>
-    </div>
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item">
+        <a class="site-list__link" href="index.html">Главная</a>
+      </li>
+      <li class="site-list__item site-list__item--active">
+        <a class="site-list__link">Каталог продукции</a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__link" href="form.html">Подбор программы</a>
+      </li>
+    </ul>
   </nav>
 </header>
 <main class="page-main">
@@ -194,13 +193,15 @@
           <a class="products-card__to-order button" href="#">Заказать</a>
         </article>
       </li>
+      <li class="products__item">
+        <div class="separator-hidden">
+          <p class="separator-hidden__title">Показать еще 100500 товаров</p>
+          <p class="separator-hidden__tagline">На самом деле вкусов гораздо больше!</p>
+          <a class="separator-hidden__button-show button">Показать все</a>
+        </div>
+      </li>
     </ul>
   </section>
-  <div class="separator-hidden">
-    <p class="separator-hidden__title">Показать еще 100500 товаров</p>
-    <p class="separator-hidden__tagline">На самом деле вкусов гораздо больше!</p>
-    <a class="separator-hidden__button-show button">Показать все</a>
-  </div>
   <section class="products-additional">
     <h2 class="products-additional__title">Дополнительные товары</h2>
     <ul class="products-additional__list">
@@ -253,10 +254,10 @@
         </article>
       </li>
     </ul>
+    <a href="#" class="gift">
+      <p class="gift__description">Закажите все и получите чехол для кота в подарок!</p>
+    </a>
   </section>
-  <a href="#" class="gift">
-    <p class="gift__description">Закажите все и получите чехол для кота в подарок!</p>
-  </a>
   <section class="address">
     <p class="address__tagline">приглашаем к сотрудничеству дилеров!</p>
     <p class="address__contacts">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>

@@ -1,8 +1,18 @@
 .separator-hidden {
   margin: 0;
-  padding: 76px 20px 25px;
+  padding: 76px 0 0;
   outline: 20px solid #ffb241;
   outline-offset: -20px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    height: 430px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 430px;
+  }
 }
 
 .separator-hidden__title {

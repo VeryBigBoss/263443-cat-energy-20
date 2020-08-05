@@ -2,4 +2,12 @@
   padding: 0 20px;
   outline: 5px solid #ffb241;
   outline-offset: -5px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }

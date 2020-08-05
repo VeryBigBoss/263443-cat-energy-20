@@ -1,8 +1,18 @@
 .promo {
   padding: 20px 20px 0;
-  background: #68b738 url("../img/index-background-mobile@1x.jpg") no-repeat;
-  outline: 20px solid tomato;
-  outline-offset: -20px;
+  background: #68b738 url("../img/index-background-mobile@1x.jpg") no-repeat center center;
+  //outline: 20px solid tomato;
+  //outline-offset: -20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    height: 810px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    height: 550px;
+  }
 }
 
 .promo__title {
@@ -22,6 +32,10 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.promo__image {
+  margin: auto;
 }
 
 .promo__choose-program {

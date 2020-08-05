@@ -1,7 +1,21 @@
 .programs {
+  margin: 0 auto;
   padding: 22px 20px 20px;
   outline: 20px solid #ffb241;
   outline-offset: -20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 2fr;
+    grid-column-gap: 80px;
+    padding: 0 $desktop-width-padding;
+  }
 }
 
 .programs__title {
@@ -16,9 +30,21 @@
 .programs__item {
   margin-bottom: 30px;
   padding: 20px 20px 30px;
+  min-height: 266px;
   background: #f2f2f2;
+  box-sizing: border-box;
 
   &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    //max-width: 570px;
+    min-height: 374px;
     margin-bottom: 0;
   }
 }

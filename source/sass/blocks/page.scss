@@ -1,0 +1,17 @@
+.page__body {
+  margin: 0 auto;
+  //padding: 20px;
+  min-width: $mobile-width;
+  //outline: 10px solid red;
+  //outline-offset: -10px;
+
+  @media (min-width: $tablet-width) {
+    //padding: 0 30px;
+    min-width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    //padding: 0 110px;
+    width: $desktop-width;
+  }
+}

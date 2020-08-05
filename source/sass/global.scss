@@ -1,4 +1,4 @@
-body {
+.page__body {
   font-family: $font-family;
   font-size: 16px;
   line-height: 18px;
@@ -7,4 +7,12 @@ body {
   margin: 0 auto;
   color: $color-grey;
   background: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }

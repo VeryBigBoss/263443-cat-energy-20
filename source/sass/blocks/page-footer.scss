@@ -4,3 +4,15 @@
   outline: 20px solid #ffb241;
   outline-offset: -20px;
 }
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: $desktop-width;
+  }
+}
