@@ -1,8 +1,17 @@
 .form-addition {
   margin: 0;
   padding: 0 20px 35px;
+  box-sizing: border-box;
   outline: 1px solid green;
   outline-offset: -1px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .form-addition__title {
@@ -17,10 +26,17 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .form-addition__item {
   margin-bottom: 12px;
+  width: 221px;
 
   &:last-child {
     margin-bottom: 0;

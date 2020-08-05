@@ -3,6 +3,17 @@
   padding: 0 20px 30px;
   outline: 1px solid tomato;
   outline-offset: -1px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 37px 0 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
 }
 
 .form__description {
@@ -12,6 +23,11 @@
   font-weight: normal;
   color: $color-black;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    width: 100%;
+  }
 }
 
 .form__button {
@@ -19,6 +35,10 @@
   font-size: 16px;
   line-height: 20px;
   border: none;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .form__note {
@@ -27,4 +47,12 @@
   font-size: 14px;
   line-height: 16px;
   color: $color-black;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
 }
