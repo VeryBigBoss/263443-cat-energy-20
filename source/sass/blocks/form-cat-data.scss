@@ -1,6 +1,12 @@
 .form-cat-data {
+  box-sizing: border-box;
   outline: 1px solid green;
   outline-offset: -1px;
+
+  @media (min-width: $desktop-width) {
+    width: 569px;
+    height: 200px;
+  }
 }
 
 .form-cat-data__list {

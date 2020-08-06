@@ -1,3 +1,18 @@
+.slider {
+  justify-self: center;
+  outline: 1px solid black;
+
+  @media (min-width: $tablet-width) {
+    min-width: 708px;
+    height: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 690px;
+    height: 656px;
+  }
+}
+
 .slider__image {
   margin-bottom: 27px;
 }

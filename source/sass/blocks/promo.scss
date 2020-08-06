@@ -1,4 +1,5 @@
 .promo {
+  display: flex;
   padding: 20px 20px 0;
   background: #68b738 url("../img/index-background-mobile@1x.jpg") no-repeat center center;
   //outline: 20px solid tomato;
@@ -41,4 +42,8 @@
 .promo__choose-program {
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $mobile-width) {
+    order: 4;
+  }
 }
