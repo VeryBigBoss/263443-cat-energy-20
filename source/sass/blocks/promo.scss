@@ -42,8 +42,5 @@
 .promo__choose-program {
   font-size: 14px;
   line-height: 18px;
-
-  @media (min-width: $mobile-width) {
-    order: 4;
-  }
+  order: 4;
 }
