@@ -15,7 +15,7 @@
   box-sizing: border-box;
   color: $color-black;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     left: 0;
@@ -31,7 +31,7 @@
     font-size: 60px;
     line-height: 60px;
 
-    &:after {
+    &::after {
       display: none;
     }
   }

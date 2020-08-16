@@ -27,7 +27,7 @@
   @media (min-width: $tablet-width) {
     width: auto;
 
-    &:after {
+    &::after {
       display: none;
     }
   }
