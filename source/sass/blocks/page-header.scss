@@ -1,13 +1,14 @@
 .page-header {
   padding: 0 20px;
-  outline: 5px solid #ffb241;
-  outline-offset: -5px;
+  min-height: 66px;
+  outline: 1px solid #ffb241;
+  outline-offset: -1px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    padding: 24px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    padding: 53px 110px 29px;
   }
 }

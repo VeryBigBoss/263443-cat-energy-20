@@ -1,27 +1,44 @@
 .features {
-  padding: 0 20px 20px;
-  outline: 20px solid tomato;
-  outline-offset: -20px;
+  padding: 8px 20px 20px;
+  outline: 1px solid tomato;
+  outline-offset: -1px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    padding: 45px 30px 0;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 110px;
-    max-width: 1200px;
+    max-width: $desktop-width;
+  }
+}
+
+.features__title {
+  margin-top: 0;
+  margin-bottom: 38px;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: normal;
+  color: $color-black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
 .features__list {
   margin: 0;
   padding: 0;
+  min-height: 300px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 60px;
+    grid-row-gap: 37px;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,42 +66,88 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 151px;
     max-width: 246px;
     min-height: 280px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 40px;
+      width: 80px;
+      height: 80px;
+    }
+
+    &:after {
+      position: absolute;
+      content: "";
+      display: block;
+      top: 0;
+      right: 5px;
+      bottom: 0;
+      left: auto;
+      width: auto;
+      height: 100%;
+      font-size: 280px;
+      line-height: 280px;
+      text-align: center;
+      color: #f2f2f2;
+      z-index: 0;
+    }
+
+    &:nth-child(1):after {
+      content: "1";
+    }
+    &:nth-child(2):after {
+      content: "2";
+    }
+    &:nth-child(3):after {
+      content: "3";
+    }
+    &:nth-child(4):after {
+      content: "4";
+    }
   }
 
   @media (min-width: $desktop-width) {
     max-width: 245px;
+    min-height: 280px;
   }
 }
 
 .features__description {
+  position: relative;
   margin: 0 0 0 20px;
   font-family: $font-family-second;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  z-index: 10;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    //width: 90%;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .features__item--benefit::before {
-  background: #68b738 url("../img/advantage-leaf@1x.png") no-repeat;
+  background: #68b738 url("../img/advantage-leaf@1x.png") no-repeat center center;
 }
 
 .features__item--consistency::before {
-  background: #68b738 url("../img/advantage-powder@1x.png") no-repeat;
+  background: #68b738 url("../img/advantage-powder@1x.png") no-repeat center center;
 }
 
 .features__item--eat::before {
-  background: #68b738 url("../img/advantage-dining@1x.png") no-repeat;
+  background: #68b738 url("../img/advantage-dining@1x.png") no-repeat center center;
 }
 
 .features__item--time::before {
-  background: #68b738 url("../img/advantage-clock@1x.png") no-repeat;
-}
-
-.features__title {
-  margin: 0 0 30px;
-  font-size: 36px;
-  line-height: 40px;
-  color: $color-black;
+  background: #68b738 url("../img/advantage-clock@1x.png") no-repeat center center;
 }

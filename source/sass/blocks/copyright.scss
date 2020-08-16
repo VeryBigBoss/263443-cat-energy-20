@@ -1,13 +1,39 @@
 .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
+  padding: 22px 0;
+  width: 100%;
+  min-height: 78px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+  }
 }
 
 .copyright__link {
   text-decoration: none;
 }
 
+.copyright:hover .copyright__logo-academy {
+  fill: $main-green;
+}
+
+.copyright:active {
+  opacity: 0.3;
+}
+
 .copyright__link--text {
+  font-family: $font-family-second;
   font-size: 16px;
   line-height: 18px;
   color: $color-grey;
+}
+
+.copyright__logo-academy {
+  width: 35px;
+  height: auto;
+  fill: #666666;
 }

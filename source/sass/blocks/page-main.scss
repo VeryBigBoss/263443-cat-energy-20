@@ -3,9 +3,41 @@
 }
 
 .page-main__title {
+  position: relative;
+  display: flex;
   margin: 0;
-  padding: 34px 0;
+  padding: 30px 20px;
+  width: 100%;
+  min-height: 104px;
   font-size: 36px;
   line-height: 36px;
+  font-weight: normal;
+  box-sizing: border-box;
   color: $color-black;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 2px;
+    background: #ebebeb;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+    padding: 25px 30px 0;
+    font-size: 60px;
+    line-height: 60px;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 42px;
+    padding: 40px 110px 0;
+  }
 }
