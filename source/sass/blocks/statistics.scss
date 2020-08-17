@@ -1,5 +1,5 @@
 .statistics {
-  padding: 25px 20px 30px;
+  padding: 27px 20px 28px;
   box-sizing: border-box;
   background: #eaeaea;
 
@@ -22,14 +22,14 @@
 }
 
 .statistics__title {
-  margin: 0 0 30px;
+  margin: 0 0 35px;
   font-size: 36px;
   line-height: 40px;
   color: $color-black;
 }
 
 .statistics__tagline {
-  margin: 0;
+  margin: 0 0 25px;
   font-family: $font-family-second;
   font-size: 14px;
   line-height: 18px;
@@ -40,6 +40,13 @@
 }
 
 .statistics__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 0 25px;
+  min-height: 64px;
+
   @media (min-width: $tablet-width) {
     width: 366px;
   }

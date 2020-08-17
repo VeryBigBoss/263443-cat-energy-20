@@ -27,6 +27,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 3px;
     //margin: 55px 0 61px 0;
     max-width: $desktop-width;
     height: 34px;

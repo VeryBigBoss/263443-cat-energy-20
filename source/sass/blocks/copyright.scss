@@ -32,8 +32,13 @@
   color: $color-grey;
 }
 
+.copyright__link--icon {
+  display: flex;
+  justify-content: right;
+}
+
 .copyright__logo-academy {
-  width: 35px;
-  height: auto;
+  width: 27px;
+  height: 34px;
   fill: #666666;
 }
