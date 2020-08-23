@@ -11,20 +11,21 @@
 
   @media (min-width: $tablet-width) {
     margin-top: auto;
-    padding: 112px 38px 38px;
+    padding: 112px 38px 36px;
     width: 324px;
     height: 430px;
     border: 2px solid #f2f2f2;
   }
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 39px;
     width: 245px;
     height: 430px;
   }
 }
 
 .separator-hidden__title {
-  margin: 0 0 7px;
+  margin: 0 0 8px;
   font-size: 16px;
   line-height: 20px;
   color: $color-black;
@@ -39,6 +40,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 45px;
+    margin-bottom: 24px;
   }
 }
 
@@ -55,6 +57,10 @@
     font-size: 16px;
     line-height: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 167px;
+  }
 }
 
 .separator-hidden__button-show {
@@ -62,10 +68,20 @@
   justify-content: center;
   align-items: center;
   margin-top: auto;
+  //margin-right: 0;
+  margin-left: 0;
   width: 100%;
   height: 40px;
   font-size: 16px;
   line-height: 16px;
   color: $color-grey;
   background: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    width: 249px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }

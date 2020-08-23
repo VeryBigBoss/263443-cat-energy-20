@@ -1,15 +1,13 @@
 .programs {
   margin: 0 auto;
   padding: 22px 20px 20px;
-  //outline: 20px solid #ffb241;
-  //outline-offset: -20px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 80px 110px 71px;
+    padding: 80px 110px 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -102,10 +100,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    //max-width: 570px;
+    max-width: 570px;
     margin-bottom: 0;
-    padding: 77px 52px 55px 52px;
-    width: 574px;
+    padding: 75px 52px 55px 52px;
+    //width: 574px;
     height: 374px;
   }
 }
@@ -184,7 +182,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 30px 0;
+    margin: 0 0 32px 0;
+    white-space: normal;
   }
 }
 
@@ -200,8 +199,8 @@
 
   &::after {
     position: absolute;
-    top: 5px;
-    right: 0;
+    top: 7px;
+    right: 7px;
     content: "";
     width: 22px;
     height: 10px;
@@ -212,6 +211,15 @@
     font-size: 20px;
     line-height: 20px;
     font-weight: normal;
+
+    &::after {
+      top: 5px;
+      right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 50px;
   }
 }
 
