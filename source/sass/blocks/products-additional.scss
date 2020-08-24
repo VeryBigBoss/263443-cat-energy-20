@@ -1,26 +1,43 @@
 .products-additional {
   margin: 0;
-  padding: 22px 20px 18px;
+  padding: 8px 20px 35px;
   box-sizing: border-box;
   outline: 1px solid tomato;
   outline-offset: -1px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-wrap: wrap;
+    padding: 68px 30px 76px;
+  }
+
+  @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
+    padding: 75px 110px 86px;
+    height: 565px;
   }
 }
 
 .products-additional__title {
-  margin: 0 0 25px;
+  margin: 0 0 35px;
   font-size: 24px;
   line-height: 24px;
   color: $color-black;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    margin-left: 37px;
+    margin-bottom: 80px;
     width: 100%;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-bottom: 78px;
   }
 }
 
@@ -29,15 +46,53 @@
   padding: 0;
   list-style: none;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+    width: 100%;
+  }
+
   @media (min-width: $desktop-width) {
     width: 896px;
+    height: 288px;
   }
 }
 
 .products-additional__item {
-  margin-bottom: 20px;
+  padding: 10px 0 12px;
+  min-height: 129px;
+  border-bottom: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  //margin-bottom: 20px;
+
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-bottom: 27px;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 14px 0 16px 0;
+    height: 72px;
+    min-height: 72px;
+    border-left: none;
+    border-right: none;
+
+    &:first-child {
+      min-height: 73px;
+    }
   }
 }

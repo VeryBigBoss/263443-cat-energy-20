@@ -2,19 +2,142 @@
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    min-width: 440px;
+    min-height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 610px;
+    min-height: 40px;
+  }
 }
 
 .site-list__item {
-  height: 66px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 66px;
   font-size: 20px;
   line-height: 20px;
-  text-align: center;
+  font-weight: bold;
+  box-sizing: border-box;
   color: $color-black;
+  z-index: 100;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:first-child::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    width: 100vw;
+    height: 2px;
+    background: #e6e6e6;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 2px;
+    background: #e6e6e6;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 35px;
+    min-height: 40px;
+
+    &:first-child::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 40px;
+  }
+}
+
+.site-list__item--active {
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: -2px;
+      left: 0;
+      width: auto;
+      height: 2px;
+      background: #68b738;
+    }
+  }
 }
 
 .site-list__link {
-  font-style: normal;
-  font-weight: 500;
+  position: relative;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
   color: $color-black;
   text-decoration: none;
+  box-sizing: border-box;
+  z-index: 100;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    letter-spacing: normal;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.site-list--index {
+  @media (min-width: $desktop-width) {
+    background: $main-green;
+  }
+}
+
+.site-list--index .site-list__item--active {
+  @media (min-width: $desktop-width) {
+    &::after {
+      background: #ffffff;
+    }
+  }
+}
+
+.site-list--index .site-list__link {
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
 }
