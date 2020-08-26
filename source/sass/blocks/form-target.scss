@@ -1,35 +1,132 @@
 .form-target {
+  position: relative;
   box-sizing: border-box;
-  outline: 1px solid green;
-  outline-offset: -1px;
+  //outline: 1px solid green;
+  //outline-offset: -1px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 100vw;
+    height: 1px;
+    background: #d9d9d9;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    width: 100vw;
+    height: 1px;
+    background: #d9d9d9;
+  }
 
   @media (min-width: $tablet-width) {
-    //min-width: 630px;
+    margin-bottom: 60px;
+    border: 1px solid #d9d9d9;
+
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 569px;
-    height: 200px;
+    min-height: 196px;
   }
 }
 
 .form-target__list {
   margin: 0;
-  padding: 20px;
+  padding: 20px 0 20px 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 23px;
+    padding-left: 27px;
+    padding-bottom: 23px;
+  }
 }
 
 .form-target__item {
-  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+  min-height: 30px;
 
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    height: 40px;
+  }
 }
 
 .form-target__input-label {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
   font-size: 16px;
   line-height: 18px;
   color: #222222;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    &::before {
+      margin-right: 20px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.form-target__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.form-target__input:checked + .form-target__input-label::after {
+  position: absolute;
+  left: 8.25px;
+  content: "";
+  display: inline-block;
+  width: 13.5px;
+  height: 13.5px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  background-color: $main-green;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    left: 11px;
+    width: 18px;
+    height: 18px;
+  }
 }
