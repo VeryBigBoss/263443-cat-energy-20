@@ -1,0 +1,9 @@
+.input {
+  height: 45px;
+  border: 1px solid #e7e7e7;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+  }
+}

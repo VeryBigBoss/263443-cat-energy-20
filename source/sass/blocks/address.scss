@@ -45,6 +45,14 @@
   }
 }
 
+.address__inner-background {
+  background-color: #f2f2f2;
+
+  @media (min-width: $desktop-width) {
+    background-color: white;
+  }
+}
+
 .address__tagline {
   margin: 0;
   width: 140px;
