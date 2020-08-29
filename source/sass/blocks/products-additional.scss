@@ -1,5 +1,5 @@
 .products-additional {
-  margin: 0;
+  margin: 0 auto;
   padding: 8px 20px 35px;
   box-sizing: border-box;
   outline: 1px solid tomato;
@@ -18,6 +18,7 @@
     justify-content: space-between;
     padding: 75px 110px 86px;
     height: 565px;
+    max-width: 1440px;
   }
 }
 
@@ -30,7 +31,6 @@
   @media (min-width: $tablet-width) {
     margin-left: 37px;
     margin-bottom: 80px;
-    width: 100%;
     font-size: 36px;
     line-height: 36px;
   }

@@ -134,7 +134,11 @@
     <p class="statistics__legend">Затраты на питание: <span class="statistics__only-desktop">15 000 РУБ.</span></p>
     <div class="statistics__slider slider">
       <div class="slider__wrapper-image">
-        <img class="slider__image slider__image--before" src="img/before-tablet@1x.png" width="320" height="240" alt="Изображение Кекса">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
+          <img class="slider__image slider__image--before" src="img/before-tablet@1x.png" srcset="img/before-tablet@2x.png 2x" width="690" height="517" alt="Изображение Кекса">
+        </picture>
       </div>
         <p class="slider__toggles">
         <button class="slider__toggle slider__toggle--current" type="button">Было</button>
@@ -154,8 +158,7 @@
 
 Санкт-Петербург</p>
     </div>
-    <iframe class="address__map" src="img/bg-map-mobile@1x.png" width="320" height="400">
-    </iframe>
+    <iframe class="address__map"></iframe>
   </section>
   <footer class="page-footer">
     <div class="page-footer__wrapper">

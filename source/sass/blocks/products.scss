@@ -1,6 +1,7 @@
 .products {
   margin: 4px 0 0 0;
   padding: 0 20px  20px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -9,6 +10,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 36px 110px 0;
+    max-width: 1440px;
   }
 }
 
@@ -22,7 +24,10 @@
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 60px;
     grid-row-gap: 60px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px 0 0 0;
+    max-width: 768px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,6 +35,7 @@
     grid-column-gap: 80px;
     grid-row-gap: 63px;
     padding: 4px 0 0 0;
+    max-width: 1440px;
   }
 }
 
