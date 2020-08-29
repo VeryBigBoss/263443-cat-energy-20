@@ -1,4 +1,5 @@
 .logo {
+  width: 190px;
   min-height: 38px;
   outline: 1px solid darkgreen;
   //outline-offset: -1px;
@@ -20,4 +21,10 @@
 
 .logo:active {
   opacity: 0.6;
+}
+
+.logo__img {
+  width: 100%;
+  max-width: 100%;
+  //height: auto;
 }

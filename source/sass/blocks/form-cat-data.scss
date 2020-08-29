@@ -46,6 +46,10 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 18px;
+  }
 }
 
 .form-cat-data__input-label {

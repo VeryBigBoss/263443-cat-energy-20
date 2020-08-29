@@ -77,22 +77,36 @@
   right: 0;
   min-width: 320px;
   min-height: 305px;
-  background: #68b738 url("../img/index-background-mobile@1x.jpg") no-repeat center center;
+  background: $main-green url("../img/index-background-mobile@1x.jpg") no-repeat center center;
   z-index: 6;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 100% auto;
+  }
 
   @media (min-width: $tablet-width) {
     top: auto;
     bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 709px;
+    height: 609px;
     background: none;
   }
 
   @media (min-width: $desktop-width) {
     width: 720px;
-    height: 696px;
+    height: 700px;
     bottom: 0;
     right: 0;
     left: auto;
-    background: #68b738 url("../img/index-background-desktop@1x.jpg") no-repeat center center;
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat center center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 100% auto;
+    }
   }
 }
 
@@ -105,14 +119,20 @@
   z-index: 4;
 
   @media (min-width: $tablet-width) {
-    top: 0;
+    top: auto;
+    right: 330px;
+    bottom: 0;
+    width: 100%;
+    height: auto;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     top: auto;
-    bottom: 54px;
+    bottom: 57px;
     right: 330px;
     left: auto;
+    width: 552px;
+    height: 499px;
   }
 }
 
