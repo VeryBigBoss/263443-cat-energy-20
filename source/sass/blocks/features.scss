@@ -119,26 +119,6 @@
   @media (min-width: $desktop-width) {
     max-width: 245px;
     min-height: 280px;
-
-    //&:nth-child(1)::after {
-    //  content: "1";
-    //  right: 15px;
-    //}
-    //
-    //&:nth-child(2)::after {
-    //  content: "2";
-    //  right: 3px;
-    //}
-    //
-    //&:nth-child(3)::after {
-    //  content: "3";
-    //  right: 0;
-    //}
-    //
-    //&:nth-child(4)::after {
-    //  content: "4";
-    //  right: 0;
-    //}
   }
 }
 
@@ -160,18 +140,46 @@
   }
 }
 
+.features__text-wrap {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}
+
 .features__item--benefit::before {
-  background: #68b738 url("../img/advantage-leaf@1x.png") no-repeat center center;
+  background: $main-green url("../img/advantage-leaf@1x.png") no-repeat center center;
+
+  @media (min-resolution: 2dppx) {
+    background: $main-green url("../img/advantage-leaf@2x.png") no-repeat center center;
+    background-size: 50px;
+  }
 }
 
 .features__item--consistency::before {
-  background: #68b738 url("../img/advantage-powder@1x.png") no-repeat center center;
+  background: $main-green url("../img/advantage-powder@1x.png") no-repeat center center;
+
+  @media (min-resolution: 2dppx) {
+    background: $main-green url("../img/advantage-powder@2x.png") no-repeat center center;
+    background-size: 50px;
+  }
 }
 
 .features__item--eat::before {
-  background: #68b738 url("../img/advantage-dining@1x.png") no-repeat center center;
+  background: $main-green url("../img/advantage-dining@1x.png") no-repeat center center;
+
+  @media (min-resolution: 2dppx) {
+    background: $main-green url("../img/advantage-dining@2x.png") no-repeat center center;
+    background-size: 50px;
+  }
 }
 
 .features__item--time::before {
-  background: #68b738 url("../img/advantage-clock@1x.png") no-repeat center center;
+  background: $main-green url("../img/advantage-clock@1x.png") no-repeat center center;
+
+  @media (min-resolution: 2dppx) {
+    background: $main-green url("../img/advantage-clock@2x.png") no-repeat center center;
+    background-size: 50px;
+  }
 }
