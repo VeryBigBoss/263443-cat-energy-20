@@ -50,6 +50,10 @@
     padding-left: 27px;
     padding-bottom: 23px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 24px;
+  }
 }
 
 .form-target__item {
