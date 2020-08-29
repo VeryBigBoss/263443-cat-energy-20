@@ -42,9 +42,17 @@
 .form__wrapper-button-note {
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 630px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: flex-start;
+    margin: 0;
+    width: 100%;
   }
 }
 
@@ -91,10 +99,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+    top: 19px;
+    right: -235px;
   }
 }
