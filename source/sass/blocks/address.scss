@@ -97,8 +97,28 @@
   width: 100%;
   height: 362px;
   border: none;
+  background: url("../img/bg-map-mobile@1x.png") no-repeat center center;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/bg-map-mobile@2x.png") no-repeat center center;
+    background-size: cover;
+  }
 
   @media (min-width: $tablet-width) {
     height: 400px;
+    background: url("../img/bg-map-tablet@1x.png") no-repeat center center;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-map-tablet@2x.png") no-repeat center center;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../img/bg-map-desktop@1x.png") no-repeat center center;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-map-desktop@2x.png") no-repeat center center;
   }
 }

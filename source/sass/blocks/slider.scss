@@ -1,6 +1,5 @@
 .slider {
   justify-self: center;
-  //min-height: 320px;
   outline: 1px solid black;
 
   @media (min-width: $tablet-width) {
@@ -16,23 +15,30 @@
 }
 
 .slider__wrapper-image {
-  //display: flex;
-}
-
-.slider__image {
-  margin-bottom: 19px;
-  //width: 100%;
-  //height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 29px;
+  width: 320px;
+  height: 232px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
+    margin-bottom: 38px;
     width: 100%;
     height: auto;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 13px;
+    margin-bottom: 26px;
   }
+}
+
+.slider__image {
+  width: 100%;
+  height: auto;
 }
 
 .slider__toggles {
@@ -53,7 +59,6 @@
 }
 
 .slider__toggle {
-  //padding: 0 10px;
   padding: 0;
   width: 70px;
   height: 40px;
