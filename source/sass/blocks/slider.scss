@@ -1,6 +1,5 @@
 .slider {
   justify-self: center;
-  //min-height: 320px;
   outline: 1px solid black;
 
   @media (min-width: $tablet-width) {
@@ -25,9 +24,6 @@
   margin-bottom: 29px;
   width: 320px;
   height: 232px;
-  //width: 311px;
-  //height: 232px;
-  //display: flex;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 38px;
@@ -41,19 +37,8 @@
 }
 
 .slider__image {
-  //margin-bottom: 19px;
   width: 100%;
   height: auto;
-
-  @media (min-width: $tablet-width) {
-    //margin-bottom: 25px;
-    //width: 100%;
-    //height: auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    //margin-bottom: 13px;
-  }
 }
 
 .slider__toggles {
@@ -74,7 +59,6 @@
 }
 
 .slider__toggle {
-  //padding: 0 10px;
   padding: 0;
   width: 70px;
   height: 40px;
