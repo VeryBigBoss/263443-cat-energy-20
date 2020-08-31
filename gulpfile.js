@@ -72,9 +72,12 @@ const copy = () => {
 exports.copy = copy;
 
 const html = () => {
-  return gulp.src("source/*.html")
-    .pipe(posthtml())
-    .pipe(gulp.dest("build"));
+  return gulp.src([
+    "source/*.html"
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"))
 }
 exports.html = html;
 
@@ -84,16 +87,6 @@ const clean = () => {
   return del("build");
 }
 exports.clean = clean;
-
-// const build = gulp.series(
-//   clean,
-//   copy,
-//   styles,
-//   sprite,
-//   html
-// );
-//
-// exports.build = build;
 
 // Server
 
@@ -122,12 +115,11 @@ exports.default = gulp.series(
   styles, server, watcher
 );
 
-exports.build = gulp.series(
+const build = gulp.series(
   clean, copy, styles, sprite, html
 );
+exports.build = build;
 
 exports.start = gulp.series(
-  // build, server, watcher
-  // clean, copy, styles, sprite, html, server, watcher
-  styles, server, watcher
+  build, server, watcher
 );
