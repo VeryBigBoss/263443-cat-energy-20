@@ -44,8 +44,10 @@
 }
 
 .social__icon-svg {
-  width: 24px;
-  height: 22px;
+  //width: 24px;
+  //height: 22px;
+  width: 100%;
+  height: auto;
   fill: #666666;
 }
 
@@ -71,11 +73,13 @@
 }
 
 .social__link--facebook {
+  width: 10px;
+  height: 19px;
   margin-left: 33px;
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
-    width: 25px;
+    width: 15px;
     height: 30px;
   }
 }
