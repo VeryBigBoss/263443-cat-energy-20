@@ -8,7 +8,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     flex-wrap: wrap;
     padding: 68px 30px 76px;
   }
