@@ -7,11 +7,13 @@
   @media (min-width: $tablet-width) {
     width: 174px;
     height: 52px;
+    margin-bottom: auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 202px;
-    height: 59px;
+    height: 66px;
+    margin-bottom: 0;
   }
 }
 
@@ -25,6 +27,5 @@
 
 .logo__img {
   width: 100%;
-  max-width: 100%;
-  //height: auto;
+  height: auto;
 }
