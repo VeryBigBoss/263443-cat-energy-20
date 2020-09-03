@@ -39,13 +39,14 @@ const images = () => {
       imagemin.mozjpeg({progressive: true}),
       imagemin.svgo()
     ]))
+    .pipe(gulp.dest("build/img"))
 }
 exports.images = images;
 
 const imagesWebp = () => {
   return gulp.src("source/img/**/*.{jpg, png}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img"))
+    .pipe(gulp.dest("build/img"))
 }
 exports.imagesWebp = imagesWebp;
 
@@ -61,7 +62,6 @@ exports.sprite = sprite;
 const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
     "source/js/**",
     "source/*.ico"
   ], {
@@ -116,7 +116,7 @@ exports.default = gulp.series(
 );
 
 const build = gulp.series(
-  clean, copy, styles, sprite, html
+  clean, copy, styles, sprite, html, images, imagesWebp
 );
 exports.build = build;
 
