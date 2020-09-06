@@ -8,7 +8,6 @@ const sync = require("browser-sync").create();
 const csso = require("gulp-csso");
 const htmlmin = require('gulp-htmlmin');
 const uglify = require('gulp-uglify');
-let pipeline = require('readable-stream').pipeline;
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
@@ -94,7 +93,7 @@ const js = () => {
     base: "source"
   })
     .pipe(uglify())
-    .pipe(gulp.dest("build/js"))
+    .pipe(gulp.dest("build"))
 };
 exports.js = js;
 //Delete
