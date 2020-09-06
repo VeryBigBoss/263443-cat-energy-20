@@ -6,6 +6,8 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const csso = require("gulp-csso");
+const htmlmin = require('gulp-htmlmin');
+const uglify = require('gulp-uglify');
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
@@ -44,8 +46,8 @@ const images = () => {
 exports.images = images;
 
 const imagesWebp = () => {
-  return gulp.src("source/img/**/*.{jpg, png}")
-    .pipe(webp({quality: 90}))
+  return gulp.src("source/img/**/*.{jpg,png}")
+    .pipe(webp({quality: 85}))
     .pipe(gulp.dest("build/img"))
 }
 exports.imagesWebp = imagesWebp;
@@ -71,16 +73,29 @@ const copy = () => {
 }
 exports.copy = copy;
 
+//HTML
 const html = () => {
   return gulp.src([
     "source/*.html"
   ], {
     base: "source"
   })
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"))
 }
 exports.html = html;
 
+//JS
+const js = () => {
+  return gulp.src([
+    "source/js/*.js"
+  ], {
+    base: "source"
+  })
+    .pipe(uglify())
+    .pipe(gulp.dest("build"))
+};
+exports.js = js;
 //Delete
 
 const clean = () => {
@@ -116,7 +131,7 @@ exports.default = gulp.series(
 );
 
 const build = gulp.series(
-  clean, copy, styles, sprite, html, images, imagesWebp
+  clean, copy, styles, sprite, html, js, images, imagesWebp
 );
 exports.build = build;
 
