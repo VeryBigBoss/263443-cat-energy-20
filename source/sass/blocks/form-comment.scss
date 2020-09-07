@@ -83,6 +83,14 @@
   color: $color-grey;
   text-transform: uppercase;
 
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:active {
+    border: 1px solid #444444;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 9px;
     padding-left: 17px;

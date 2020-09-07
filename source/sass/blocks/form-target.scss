@@ -1,8 +1,6 @@
 .form-target {
   position: relative;
   box-sizing: border-box;
-  //outline: 1px solid green;
-  //outline-offset: -1px;
 
   &::before {
     content: "";
@@ -80,6 +78,7 @@
   line-height: 18px;
   color: #222222;
   text-transform: uppercase;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -104,6 +103,20 @@
       width: 40px;
       height: 40px;
     }
+  }
+}
+
+.form-target__input-label:hover {
+  &::before {
+    border-color: #bababa;
+  }
+}
+
+.form-target__input-label:active {
+  opacity: 0.3;
+
+  &::before {
+    opacity: 0.3;
   }
 }
 

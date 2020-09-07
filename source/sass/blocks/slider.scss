@@ -133,6 +133,9 @@
   border: none;
   box-sizing: border-box;
   background: #eaeaea;
+  cursor: pointer;
+  outline: none;
+
 
   @media (min-width: $tablet-width) {
     width: auto;
@@ -141,6 +144,14 @@
     line-height: 30px;
     border-bottom: 1px dotted #dcdcdc;
   }
+}
+
+.slider__toggle:hover {
+  border-bottom-style: solid;
+}
+
+.slider__toggle:active {
+  border-bottom: 1px solid transparent;
 }
 
 .slider__scale {
@@ -170,6 +181,7 @@
   height: 6px;
   border-radius: 6px;
   background: $main-green;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     top: -13px;
@@ -181,4 +193,14 @@
     background-color: $main-green;
     box-shadow: 0 0 0 1px #dcdcdc;
   }
+}
+
+.slider__state:hover {
+  box-shadow: 0 0 0 1px #dcdcdc,
+              0 1px 4px 2px #dcdcdc;
+}
+
+.slider__state:active {
+  box-shadow: 0 0 0 1px $main-green,
+              0 1px 4px 2px #dcdcdc;
 }
