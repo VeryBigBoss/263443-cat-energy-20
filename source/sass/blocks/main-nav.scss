@@ -36,23 +36,36 @@
 .main-nav__toggle {
   align-self: center;
   width: 24px;
-  height: 16px;
+  height: 20px;
   border: none;
-  background: #ffffff url("../img/icon-close.svg") no-repeat;
+  background: #ffffff url("../img/icon-mobile-menu.svg") no-repeat;
+  background-size: cover;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
+.main-nav__toggle--close {
+  background: #ffffff url("../img/icon-close.svg") no-repeat;
+}
+
 .main-nav__list {
   width: 100%;
-  //outline: 2px solid blue;
-  //outline-offset: -2px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     width: auto;
+  }
+}
+
+.main-nav__list--closed {
+  @media (max-width: $tablet-width - 1) {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -20px;
   }
 }
