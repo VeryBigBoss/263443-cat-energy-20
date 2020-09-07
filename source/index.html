@@ -47,7 +47,7 @@
           <img class="logo__img" src="img/logo-mobile.svg" width="190" height="38" alt="Логотип CAT ENERGY">
         </picture>
       </a>
-      <button class="main-nav__toggle" type="button">
+      <button class="main-nav__toggle main-nav__toggle--close" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
     </div>
@@ -81,12 +81,18 @@
     <a class="promo__choose-program button" href="form.html">Подобрать программу</a>
   </article>
   <section class="programs">
-    <article class="programs__item programs__item--slim">
+    <article class="programs__item">
+      <svg class="programs__icon-cat-slim" width="36" height="50">
+        <use xlink:href="img/sprite.svg#icon-cat-slim"></use>
+      </svg>
       <h2 class="programs__title">Похудение</h2>
       <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
       <a class="programs__choose" href="catalog.html">Каталог SLIM</a>
     </article>
-    <article class="programs__item programs__item--pro">
+    <article class="programs__item">
+      <svg class="programs__icon-cat-pro" width="67" height="28">
+        <use xlink:href="img/sprite.svg#icon-cat-pro"></use>
+      </svg>
       <h2 class="programs__title">Набор массы</h2>
       <p class="programs__description">Заработать авторитет среди дворовых котов
 и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые
@@ -186,7 +192,9 @@
     <div class="page-footer__wrapper">
       <div class="page-footer__wrapper-logo">
         <a href="#" class="logo">
-          <img class="logo__img" src="img/logo-footer.svg" width="127" height="23" alt="CAT ENERGY">
+          <svg class="logo__img" role="img" aria-label="Логотип CAT ENERGY" width="127" height="23">
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
+          </svg>
         </a>
       </div>
       <ul class="social">

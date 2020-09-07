@@ -108,14 +108,12 @@
   }
 }
 
-.programs__item--slim::after {
+.programs__icon-cat-slim {
   position: absolute;
   top: 21px;
   left: 29px;
-  content: "";
   width: 36px;
   height: 50px;
-  background-image: url("../img/icon-cat-slim.svg");
 
   @media (min-width: $tablet-width) {
     top: 81px;
@@ -136,14 +134,12 @@
   }
 }
 
-.programs__item--pro::after {
+.programs__icon-cat-pro {
   position: absolute;
   top: 35px;
   left: 13px;
-  content: "";
   width: 67px;
   height: 28px;
-  background-image: url("../img/icon-cat-pro.svg");
 
   @media (min-width: $tablet-width) {
     top: 135px;
