@@ -162,26 +162,6 @@
   opacity: 0;
 }
 
-.form-addition__input:checked + .form-addition__input-label::after {
-  //position: absolute;
-  //left: 8.25px;
-  //content: "";
-  //display: inline-block;
-  //width: 13.5px;
-  //height: 13.5px;
-  //border: 1px solid #cdcdcd;
-  //border-radius: 50%;
-  //background-color: $main-green;
-  //background-repeat: no-repeat;
-  //background-position: center center;
-  //background-size: 50% 50%;
-  //box-sizing: border-box;
-  //
-  //@media (min-width: $tablet-width) {
-  //  left: 13px;
-  //}
-}
-
 .form-addition__icon {
   position: absolute;
   left: 7px;
