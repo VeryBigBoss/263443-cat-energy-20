@@ -32,7 +32,7 @@
       background-size: 100% auto;
     }
   }
-  
+
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 0 0 0 235px;
@@ -68,10 +68,10 @@
   }
 
   @media (min-width: $desktop-width) {
-      top: -98px;
-      left: 0;
-      right: 0;
-      margin: auto;
+    top: -98px;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 }
 
