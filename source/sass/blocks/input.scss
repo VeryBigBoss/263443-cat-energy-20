@@ -3,6 +3,18 @@
   border: 1px solid #e7e7e7;
   box-sizing: border-box;
 
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:active {
+    border: 1px solid #444444;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border: 1px solid #ff8282;
+  }
+
   @media (min-width: $tablet-width) {
     height: 52px;
   }

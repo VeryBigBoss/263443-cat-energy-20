@@ -2,8 +2,6 @@
   margin: 0;
   padding: 27px 0 20px;
   box-sizing: border-box;
-  //outline: 1px solid green;
-  //outline-offset: -1px;
 
   @media (min-width: $tablet-width) {
     padding-top: 16px;
@@ -88,6 +86,7 @@
 }
 
 .form-contacts__item {
+  position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 14px;
@@ -106,6 +105,7 @@
 }
 
 .form-contacts__email-input {
+  position: relative;
   flex-grow: 1;
   margin-left: 12px;
   padding-left: 14px;
@@ -154,4 +154,29 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.form-contacts__icon {
+  position: absolute;
+  right: 15px;
+
+  @media (min-width: $tablet-width) {
+    right: 18px;
+  }
+}
+
+.form-contacts__email-input:active + .form-contacts__icon {
+  fill: $main-green;
+}
+
+.form-contacts__email-input:focus + .form-contacts__icon {
+  fill: $main-green;
+}
+
+.form-contacts__email-input:invalid:not(:placeholder-shown) + .form-contacts__icon {
+  fill: #ff8282;
+}
+
+.form-contacts__icon--phone {
+  right: 12px;
 }
