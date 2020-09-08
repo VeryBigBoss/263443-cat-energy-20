@@ -1,8 +1,14 @@
 .logo {
   width: 190px;
   min-height: 38px;
-  outline: 1px solid darkgreen;
-  //outline-offset: -1px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     width: 174px;
@@ -15,14 +21,6 @@
     height: 66px;
     margin-bottom: 0;
   }
-}
-
-.logo:hover {
-  opacity: 0.8;
-}
-
-.logo:active {
-  opacity: 0.6;
 }
 
 .logo__img {

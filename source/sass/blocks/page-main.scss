@@ -15,16 +15,6 @@
   box-sizing: border-box;
   color: $color-black;
 
-  //&::after {
-  //  content: "";
-  //  position: absolute;
-  //  left: 0;
-  //  bottom: 0;
-  //  width: 100vw;
-  //  height: 2px;
-  //  background: #ebebeb;
-  //}
-
   @media (min-width: $tablet-width) {
     margin-bottom: 33px;
     padding: 27px 30px 0;

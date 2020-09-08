@@ -7,7 +7,7 @@
   margin: 0 auto;
   color: $color-grey;
   background: #ffffff;
-  //opacity: 0.7;
+  opacity: 0.7;
 }
 
 .visually-hidden {
@@ -16,4 +16,12 @@
   width: 1px;
   height: 1px;
   margin: -20px;
+}
+
+.only-not-mobile {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
