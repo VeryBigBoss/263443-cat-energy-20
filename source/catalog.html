@@ -7,31 +7,6 @@
   <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font">
   <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
   <link href="css/style.min.css" rel="stylesheet">
-  <!-- Pixel Glass -->
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      /* По умолчанию показывается мобильный макет */
-      background-image: url("img/Mobile-Catalog.png");
-    }
-
-    /* Планшет */
-    @media ( min-width: 768px ) {
-      HTML {
-        /* Планшетный макет */
-        background-image: url("img/Tablet-Catalog.png");
-      }
-    }
-
-    /* Десктоп */
-    @media ( min-width: 1440px ) {
-      HTML {
-        /* Десктопный макет */
-        background-image: url("img/Desktop-Catalog.png");
-      }
-    }
-  </style>
 </head>
 <body class="page__body">
 <header class="page-header">
@@ -351,18 +326,16 @@
       </li>
     </ul>
     <a href="#" class="gift">
-      <p class="gift__description">Закажите все
-и получите чехол для кота в подарок!</p>
+      <svg class="gift__icon" width="56" height="62">
+        <use xlink:href="img/sprite.svg#icon-gift"></use>
+      </svg>
+      <p class="gift__description">Закажите все<br>и получите чехол для кота в подарок!</p>
     </a>
   </section>
   <section class="address">
     <div class="address__wrapper-text address__inner-background">
-      <p class="address__tagline">приглашаем
-к сотрудничеству дилеров!</p>
-      <p class="address__contacts">ул. Большая
-Конюшенная, д. 19/8
-
-Санкт-Петербург</p>
+      <p class="address__tagline">приглашаем<br>к сотрудничеству дилеров!</p>
+      <p class="address__contacts">ул. Большая Конюшенная, д. 19/8 <br><br class="only-not-mobile">Санкт-Петербург</p>
     </div>
     <iframe class="address__map"></iframe>
   </section>

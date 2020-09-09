@@ -7,8 +7,6 @@
   height: auto;
   min-height: 190px;
   box-sizing: border-box;
-  outline: 1px solid blue;
-  outline-offset: -1px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;

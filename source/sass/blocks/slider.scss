@@ -2,7 +2,7 @@
   justify-self: center;
   margin: 0;
   padding: 0;
-  outline: 1px solid black;
+  //outline: 1px solid black;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
@@ -80,8 +80,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  //margin-left: auto;
-  //margin-right: auto;
   margin-bottom: 29px;
   width: 320px;
   height: 232px;

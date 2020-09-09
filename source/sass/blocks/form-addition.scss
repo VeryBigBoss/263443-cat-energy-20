@@ -2,8 +2,6 @@
   margin: 0;
   padding: 0 0 35px;
   box-sizing: border-box;
-  //outline: 1px solid green;
-  //outline-offset: -1px;
 
   @media (min-width: $tablet-width) {
     padding-top: 40px;
@@ -165,7 +163,7 @@
 .form-addition__icon {
   position: absolute;
   left: 7px;
-  fill: $main-green;
+  fill: white;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {

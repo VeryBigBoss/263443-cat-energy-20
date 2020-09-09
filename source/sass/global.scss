@@ -17,3 +17,11 @@
   height: 1px;
   margin: -20px;
 }
+
+.only-not-mobile {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

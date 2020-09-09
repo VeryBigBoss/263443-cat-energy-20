@@ -7,34 +7,7 @@
   <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font">
   <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
   <link href="css/style.min.css" rel="stylesheet">
-  <!-- Pixel Glass -->
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      /* По умолчанию показывается мобильный макет */
-      background-image: url("img/Mobile-Form.png");
-    }
 
-    /* Планшет */
-    @media ( min-width: 768px ) {
-      HTML {
-        /* Планшетный макет */
-        background-image: url("img/Tablet-Form.png");
-      }
-    }
-
-    /* Десктоп */
-    @media ( min-width: 1440px ) {
-      HTML {
-        /* Десктопный макет */
-        background-image: url("img/Desktop-Form.png");
-      }
-    }
-  </style>
-  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <script src="../node_modules/pixel-glass/script.js"></script>
-  <link rel="stylesheet" href="sass/blocks/form.scss">
 </head>
 <body class="page__body">
 <header class="page-header">
@@ -67,8 +40,7 @@
 <main class="page-main">
   <h1 class="page-main__title">Подбор программы</h1>
   <form class="form" method="post" action="https://echo.htmlacademy.ru">
-    <p class="form__description">Заполните анкету, и мы подберем
-программу питания для вашего кота</p>
+    <p class="form__description">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
     <section class="form-cat-data">
       <ul class="form-cat-data__list">
         <li class="form-cat-data__item">
@@ -164,12 +136,8 @@
   </form>
   <section class="address">
     <div class="address__wrapper-text address__inner-background">
-      <p class="address__tagline">приглашаем
-к сотрудничеству дилеров!</p>
-      <p class="address__contacts">ул. Большая
-Конюшенная, д. 19/8
-
-Санкт-Петербург</p>
+      <p class="address__tagline">приглашаем<br>к сотрудничеству дилеров!</p>
+      <p class="address__contacts">ул. Большая Конюшенная, д. 19/8 <br><br class="only-not-mobile">Санкт-Петербург</p>
     </div>
     <iframe class="address__map"></iframe>
   </section>
