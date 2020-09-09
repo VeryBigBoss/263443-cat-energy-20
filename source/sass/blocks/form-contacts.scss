@@ -118,6 +118,22 @@
   box-sizing: border-box;
   color: $color-grey;
 
+  &:focus {
+    outline: 2px solid #444444;
+
+    & + .form-contacts__icon {
+      fill: $main-green;
+    }
+
+    &:invalid {
+      outline: 2px solid #ff8282;
+
+      + .form-contacts__icon {
+        fill: #ff8282;
+      }
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding-left: 20px;
     font-size: 20px;
@@ -160,23 +176,11 @@
   position: absolute;
   right: 15px;
 
+  &--phone {
+    right: 12px;
+  }
+
   @media (min-width: $tablet-width) {
     right: 18px;
   }
-}
-
-.form-contacts__email-input:active + .form-contacts__icon {
-  fill: $main-green;
-}
-
-.form-contacts__email-input:focus + .form-contacts__icon {
-  fill: $main-green;
-}
-
-.form-contacts__email-input:invalid:not(:placeholder-shown) + .form-contacts__icon {
-  fill: #ff8282;
-}
-
-.form-contacts__icon--phone {
-  right: 12px;
 }

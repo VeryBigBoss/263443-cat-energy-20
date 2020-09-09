@@ -85,7 +85,7 @@
         </li>
         <li class="form-contacts__item">
           <label class="form-contacts__input-label" for="form-contacts-phone">Телефон:*</label>
-          <input id="form-contacts-phone" class="form-contacts__email-input input" type="text" name="form-contacts-phone" placeholder="8 (960) 900-60-90" required>
+          <input id="form-contacts-phone" class="form-contacts__email-input input" type="tel" name="form-contacts-phone" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="8 (960) 900-60-90" required>
           <svg class="form-contacts__icon form-contacts__icon--phone" width="20" height="20">
             <use href="img/sprite.svg#icon-phone"></use>
           </svg>
