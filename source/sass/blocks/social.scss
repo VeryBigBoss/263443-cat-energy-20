@@ -43,7 +43,7 @@
   }
 }
 
-.social__link--vkontakte {
+.social__icon-svg--vkontakte {
   @media (min-width: $tablet-width) {
     width: 30px;
     height: 22px;
@@ -62,7 +62,7 @@
   opacity: 0.3;
 }
 
-.social__link--instagram {
+.social__icon-svg--instagram {
   width: 16px;
   height: 16px;
 
@@ -73,7 +73,7 @@
   }
 }
 
-.social__link--facebook {
+.social__icon-svg--facebook {
   width: 10px;
   height: 19px;
 
