@@ -1,10 +1,22 @@
 .form-contacts {
+  position: relative;
   margin: 0;
-  padding: 27px 0 20px;
+  padding-top: 27px;
+  padding-bottom: 20px;
   box-sizing: border-box;
+  overflow-x: hidden;
 
   @media (min-width: $tablet-width) {
     padding-top: 16px;
+
+    &::before {
+      position: absolute;
+      top: 36px;
+      content: "";
+      width: 100vw;
+      height: 2px;
+      background: $main-green;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -12,16 +24,38 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+
+    &::before {
+      top: 32px;
+    }
+  }
+}
+
+.form-contacts__wrapper {
+  box-sizing: border-box;
+  max-width: $desktop-width;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+    padding-right: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
 .form-contacts__title {
+  display: flex;
   position: relative;
   margin: 0 0 32px;
   font-size: 24px;
   line-height: 26px;
   font-weight: normal;
   color: $color-black;
+  background: white;
+  width: auto;
 
   &::after {
     content: "";
@@ -31,9 +65,11 @@
     width: 99px;
     height: 2px;
     background-color: $main-green;
+    z-index: 1;
   }
 
   @media (min-width: $tablet-width) {
+    display: inline-block;
     margin-bottom: 76px;
     font-size: 36px;
     line-height: 36px;
@@ -41,34 +77,25 @@
     &::before {
       content: "";
       position: absolute;
-      top: 22px;
-      left: -69px;
-      width: 30px;
-      height: 2px;
-      background-color: $main-green;
+      top: 0;
+      left: -40px;
+      width: 40px;
+      height: 40px;
+      background-color: white;
     }
 
     &::after {
-      top: 22px;
-      right: -66px;
-      width: 145px;
+      top: 0;
+      right: -40px;
+      width: 40px;
+      height: 40px;
+      background: white;
     }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 75px;
-
-    &::before {
-      top: 22px;
-      left: -110px;
-      width: 70px;
-    }
-
-    &::after {
-      top: 22px;
-      right: -110px;
-      width: 778px;
-    }
+    padding-left: 0;
   }
 }
 

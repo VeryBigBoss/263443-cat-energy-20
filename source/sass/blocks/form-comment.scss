@@ -1,35 +1,83 @@
 .form-comment {
+  position: relative;
   margin: 0;
-  padding: 7px 0 25px;
+  padding-top: 7px;
+  padding-bottom: 25px;
   box-sizing: border-box;
+  overflow-x: hidden;
+
+  &::before {
+    position: absolute;
+    top: 23px;
+    content: "";
+    width: 100vw;
+    height: 2px;
+    background: $main-green;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 46px;
     min-width: 630px;
+
+    &::before {
+      top: 67px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 29px;
     width: 100%;
+
+    &::before {
+      top: 50px;
+    }
+  }
+}
+
+.form-comment__wrapper {
+  box-sizing: border-box;
+  max-width: $desktop-width;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+    padding-right: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
 .form-comment__title {
   position: relative;
+  display: inline-block;
   margin: 0 0 34px;
   font-size: 24px;
   line-height: 26px;
   font-weight: normal;
   color: $color-black;
+  background: white;
+  box-sizing: border-box;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
-    top: 16px;
+    top: 0;
+    left: -20px;
+    width: 20px;
+    height: 40px;
+    background-color: white;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
     right: -20px;
-    width: 158px;
-    height: 2px;
-    background-color: $main-green;
+    width: 20px;
+    height: 40px;
+    background: white;
   }
 
   @media (min-width: $tablet-width) {
@@ -38,33 +86,15 @@
     line-height: 36px;
 
     &::before {
-      content: "";
-      position: absolute;
-      top: 22px;
-      left: -69px;
-      width: 30px;
-      height: 2px;
-      background-color: $main-green;
+      left: -40px;
+      width: 40px;
+      height: 40px;
     }
 
     &::after {
-      top: 22px;
-      right: -66px;
-      width: 478px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::before {
-      top: 22px;
-      left: -110px;
-      width: 70px;
-    }
-
-    &::after {
-      top: 22px;
-      right: -110px;
-      width: 1108px;
+      right: -40px;
+      width: 40px;
+      height: 40px;
     }
   }
 }

@@ -1,4 +1,40 @@
 .products-additional {
+  position: relative;
+  //margin: 0 auto;
+  //padding: 8px 20px 35px;
+  //box-sizing: border-box;
+
+  //@media (min-width: $tablet-width) {
+  //  display: flex;
+  //  flex-direction: column;
+  //  justify-content: flex-start;
+  //  flex-wrap: wrap;
+  //  padding: 68px 30px 76px;
+  //}
+  //
+  //@media (min-width: $desktop-width) {
+  //  flex-direction: row;
+  //  justify-content: space-between;
+  //  padding: 75px 110px 86px;
+  //  height: 565px;
+  //  max-width: 1440px;
+  //}
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      position: absolute;
+      top: 97px;
+      left: 0;
+      content: "";
+      width: 100vw;
+      height: 2px;
+      background: $main-green;
+    }
+  }
+}
+
+.products-additional__wrapper {
+  position: relative;
   margin: 0 auto;
   padding: 8px 20px 35px;
   box-sizing: border-box;
@@ -21,22 +57,94 @@
 }
 
 .products-additional__title {
+  display: flex;
+  position: relative;
+
   margin: 0 0 35px;
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
   color: $color-black;
+  background: white;
+
+  &::after {
+    content: "";
+    flex-grow: 1;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: -20px;
+    width: 50px;
+    height: 2px;
+    background: $main-green;
+  }
 
   @media (min-width: $tablet-width) {
-    margin-left: 37px;
+    //margin-left: 37px;
     margin-bottom: 80px;
+    padding-left: 37px;
     font-size: 36px;
     line-height: 36px;
+    text-align: left;
+
+    &::before {
+      content: "";
+      margin-top: 22px;
+      margin-left: -66px;
+      margin-right: 37px;
+      width: 30px;
+      height: 2px;
+      background: $main-green;
+    }
+
+    &::after {
+      margin-top: 22px;
+      margin-left: 37px;
+      margin-right: -30px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
+    //margin-left: 0;
+    padding-left: 0;
     margin-bottom: 78px;
+    //width: 100%;
+    //width: auto;
+
+    //&::before {
+    //  position: absolute;
+    //  left: 0;
+    //  content: "";
+    //  //flex-grow: 1;
+    //  //margin-top: 22px;
+    //  //margin-left: -66px;
+    //  //margin-right: 40px;
+    //  width: 100vw;
+    //  height: 2px;
+    //  background: $main-green;
+    //}
+
+    //&::after {
+    //  margin-top: 22px;
+    //  margin-left: 35px;
+    //  margin-right: -30px;
+    //}
+    &::before {
+      position: absolute;
+      margin: 0;
+      left: -40px;
+      content: "";
+      width: 40px;
+      height: 40px;
+      background: white;
+    }
+
+    &::after {
+      margin: 0;
+      display: block;
+      width: 40px;
+      height: 40px;
+      background: white;
+    }
   }
 }
 

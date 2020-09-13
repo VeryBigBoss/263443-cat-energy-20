@@ -86,7 +86,8 @@
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    margin: 72px auto auto 189px;
+    //margin: 72px auto auto 189px;
+    margin: 72px 125px auto auto;
     text-align: left;
   }
 

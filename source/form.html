@@ -13,7 +13,7 @@
 <header class="page-header">
   <nav class="main-nav">
     <div class="main-nav__wrapper-logo-button">
-      <a class="logo">
+      <a class="logo" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -38,9 +38,10 @@
   </nav>
 </header>
 <main class="page-main">
-  <h1 class="page-main__title">Подбор программы</h1>
+  <h1 class="page-main__title container">Подбор программы</h1>
   <form class="form" method="post" action="https://echo.htmlacademy.ru">
-    <p class="form__description">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+    <p class="form__description container">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+    <div class="form__layout container">
     <section class="form-cat-data">
       <ul class="form-cat-data__list">
         <li class="form-cat-data__item">
@@ -73,7 +74,9 @@
         </li>
       </ul>
     </section>
+    </div>
     <section class="form-contacts">
+      <div class="form-contacts__wrapper container">
       <h3 class="form-contacts__title">Контактные данные (владельца кота)</h3>
       <ul class="form-contacts__list">
         <li class="form-contacts__item">
@@ -91,12 +94,16 @@
           </svg>
         </li>
       </ul>
+      </div>
     </section>
     <section class="form-comment">
+      <div class="form-comment__wrapper container">
       <h3 class="form-comment__title">Комментарий</h3>
       <textarea id="form-comment-description" class="form-comment__description" name="form-comment-description" placeholder="Расскажите обо всех повАдках кота" rows="5" cols="20"></textarea>
+      </div>
     </section>
     <section class="form-addition">
+      <div class="form-addition__wrapper">
       <h3 class="form-addition__title">Дополнительно</h3>
       <ul class="form-addition__list">
         <li class="form-addition__item">
@@ -128,6 +135,7 @@
           </svg>
         </li>
       </ul>
+      </div>
     </section>
     <div class="form__wrapper-button-note">
       <button class="form__button button" type="submit">Отправить заявку</button>
@@ -144,7 +152,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__wrapper-logo">
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
           <svg class="logo__img" role="img" aria-label="Логотип CAT ENERGY" width="127" height="23">
             <use xlink:href="img/sprite.svg#logo-footer"></use>
           </svg>

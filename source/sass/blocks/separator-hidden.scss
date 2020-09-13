@@ -1,4 +1,5 @@
 .separator-hidden {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -19,6 +20,22 @@
     padding-bottom: 39px;
     width: 245px;
     height: 430px;
+  }
+}
+
+.separator-hidden__icon-plus {
+  position: absolute;
+  margin: auto;
+  top: 20px;
+  left: 0;
+  right: 0;
+  fill: #d3d3d3;
+  stroke-width: 2;
+
+  @media (min-width: $tablet-width) {
+    top: 50px;
+    width: 60px;
+    height: 60px;
   }
 }
 

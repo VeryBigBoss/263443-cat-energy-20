@@ -1,6 +1,8 @@
 var buttonMenu = document.querySelector(".main-nav__toggle");
 var mainNavList = document.querySelector(".main-nav__list");
 
+buttonMenu.classList.remove("no-js");
+
 buttonMenu.classList.toggle("main-nav__toggle--close");
 mainNavList.classList.toggle("main-nav__list--closed");
 
