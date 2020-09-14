@@ -146,10 +146,10 @@
     line-height: 16px;
     border-bottom: 1px solid #cdcdcd;
 
-     &:nth-child(1) {
-        padding-right: 3px;
-      }
+    &:nth-child(1) {
+      padding-right: 3px;
     }
+  }
 
   @media (min-width: $desktop-width) {
     padding-right: 4px;
