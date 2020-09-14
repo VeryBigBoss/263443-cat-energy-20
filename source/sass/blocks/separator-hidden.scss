@@ -26,7 +26,7 @@
 .separator-hidden__icon-plus {
   position: absolute;
   margin: auto;
-  top: 20px;
+  top: 18px;
   left: 0;
   right: 0;
   fill: #d3d3d3;
@@ -93,7 +93,7 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    width: 249px;
+    //width: 249px;
   }
 
   @media (min-width: $desktop-width) {

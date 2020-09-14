@@ -131,6 +131,12 @@
   }
 }
 
+.form-contacts__item:first-child .form-contacts__email-input {
+  @media (min-width: $tablet-width) {
+    margin-left: 19px;
+  }
+}
+
 .form-contacts__email-input {
   position: relative;
   flex-grow: 1;
@@ -165,14 +171,6 @@
     padding-left: 20px;
     font-size: 20px;
     line-height: 30px;
-
-    &:first-child {
-      margin-left: 18px;
-    }
-
-    &:last-child {
-      margin-left: 14px;
-    }
   }
 
   @media (min-width: $desktop-width) {

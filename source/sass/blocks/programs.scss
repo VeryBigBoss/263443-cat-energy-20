@@ -154,20 +154,24 @@
 }
 
 .programs__description {
-  margin: 0 0 40px;
+  margin: 0 0 19px;
+  padding-bottom: 21px;
   font-family: $font-family-second;
   font-size: 14px;
   line-height: 18px;
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
     margin-right: 17px;
     margin-bottom: 55px;
+    padding-bottom: 0;
     font-size: 16px;
     line-height: 24px;
     font-weight: normal;
     white-space: pre-wrap;
     color: $color-black;
     text-align: left;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {

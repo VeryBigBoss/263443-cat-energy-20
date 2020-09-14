@@ -17,7 +17,7 @@
 .products-additional__wrapper {
   position: relative;
   margin: 0 auto;
-  padding: 8px 20px 35px;
+  padding: 7px 20px 35px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
@@ -31,7 +31,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 75px 110px 86px;
+    padding: 75px 110px 15px;
     min-height: 565px;
     max-width: 1440px;
   }
@@ -86,7 +86,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 0;
-    margin-bottom: 78px;
+    margin-bottom: 72px;
 
     &::before {
       position: absolute;
@@ -153,11 +153,13 @@
     align-items: center;
     margin: 0;
     padding: 14px 0 16px 0;
+    height: auto;
     min-height: 72px;
     border-left: none;
     border-right: none;
 
     &:first-child {
+      height: auto;
       min-height: 73px;
     }
   }

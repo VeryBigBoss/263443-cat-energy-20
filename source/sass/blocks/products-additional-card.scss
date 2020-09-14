@@ -20,7 +20,7 @@
 }
 
 .products-additional-card__title {
-  margin: 0 0 13px;
+  margin: 1px 0 13px;
   font-size: 16px;
   line-height: 16px;
   font-weight: normal;
@@ -29,6 +29,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 13px;
+    max-width: 300px;
     height: auto;
     font-size: 20px;
     line-height: 20px;
@@ -69,6 +70,10 @@
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -1px;
+  }
 }
 
 .products-additional-card__value {
@@ -87,6 +92,7 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 23px;
+    padding-right: 2px;
     min-width: 70px;
     font-size: 16px;
     line-height: 20px;
