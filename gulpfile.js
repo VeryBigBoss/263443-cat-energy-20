@@ -6,8 +6,8 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const csso = require("gulp-csso");
-const htmlmin = require('gulp-htmlmin');
-const uglify = require('gulp-uglify');
+const htmlmin = require("gulp-htmlmin");
+const uglify = require("gulp-uglify");
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
@@ -104,7 +104,7 @@ const server = (done) => {
     },
     cors: true,
     notify: false,
-    ui: false,
+    ui: false
   });
   done();
 }

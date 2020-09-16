@@ -186,6 +186,10 @@
   position: absolute;
   z-index: -1;
   opacity: 0;
+
+  &:focus + .form-addition__input-label::before {
+    box-shadow: 0 0 4px 1px $main-green;
+  }
 }
 
 .form-addition__icon {

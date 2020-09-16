@@ -30,7 +30,8 @@
   left: 0;
   right: 0;
   fill: #d3d3d3;
-  stroke-width: 2;
+  stroke: #d3d3d3;
+  stroke-width: 1px;
 
   @media (min-width: $tablet-width) {
     top: 50px;
@@ -91,10 +92,6 @@
   color: $color-grey;
   background: #f2f2f2;
   cursor: pointer;
-
-  @media (min-width: $tablet-width) {
-    //width: 249px;
-  }
 
   @media (min-width: $desktop-width) {
     width: 100%;

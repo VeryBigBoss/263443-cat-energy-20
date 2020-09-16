@@ -42,99 +42,99 @@
   <form class="form" method="post" action="https://echo.htmlacademy.ru">
     <p class="form__description container">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
     <div class="form__layout container">
-    <section class="form-cat-data">
-      <ul class="form-cat-data__list">
-        <li class="form-cat-data__item">
-          <label class="form-cat-data__input-label" for="form-cat-name">Имя:*</label>
-          <input id="form-cat-name" class="form-cat-data__input input" type="text" name="form-cat-name" placeholder="Барсик" required>
-        </li>
-        <li class="form-cat-data__item">
-          <label class="form-cat-data__input-label" for="form-cat-weight">Вес (кг):*</label>
-          <input id="form-cat-weight" class="form-cat-data__input input" type="text" name="form-cat-weight" placeholder="7" required>
-        </li>
-        <li class="form-cat-data__item">
-          <label class="form-cat-data__input-label" for="form-cat-age">Возраст (лет):</label>
-          <input id="form-cat-age" class="form-cat-data__input input" type="text" name="form-cat-age" placeholder="7">
-        </li>
-      </ul>
-    </section>
-    <section class="form-target">
-      <ul class="form-target__list">
-        <li class="form-target__item">
-          <input id="form-target-slim" class="form-target__input" type="radio" name="form-target" value="form-target-slim" checked>
-          <label class="form-target__input-label" for="form-target-slim">Похудение</label>
-        </li>
-        <li class="form-target__item">
-          <input id="form-target-weight" class="form-target__input" type="radio" name="form-target" value="form-target-weight">
-          <label class="form-target__input-label" for="form-target-weight">Набор массы</label>
-        </li>
-        <li class="form-target__item">
-          <input id="form-target-other" class="form-target__input" type="radio" name="form-target" value="form-target-other">
-          <label class="form-target__input-label" for="form-target-other">Не знаю (Нужен ваш совет)</label>
-        </li>
-      </ul>
-    </section>
+      <section class="form-cat-data">
+        <ul class="form-cat-data__list">
+          <li class="form-cat-data__item">
+            <label class="form-cat-data__input-label" for="form-cat-name">Имя:*</label>
+            <input id="form-cat-name" class="form-cat-data__input input" type="text" name="form-cat-name" placeholder="Барсик" required>
+          </li>
+          <li class="form-cat-data__item">
+            <label class="form-cat-data__input-label" for="form-cat-weight">Вес (кг):*</label>
+            <input id="form-cat-weight" class="form-cat-data__input input" type="text" name="form-cat-weight" placeholder="7" required>
+          </li>
+          <li class="form-cat-data__item">
+            <label class="form-cat-data__input-label" for="form-cat-age">Возраст (лет):</label>
+            <input id="form-cat-age" class="form-cat-data__input input" type="text" name="form-cat-age" placeholder="7">
+          </li>
+        </ul>
+      </section>
+      <section class="form-target">
+        <ul class="form-target__list">
+          <li class="form-target__item">
+            <input id="form-target-slim" class="form-target__input" type="radio" name="form-target" value="form-target-slim" checked>
+            <label class="form-target__input-label" for="form-target-slim">Похудение</label>
+          </li>
+          <li class="form-target__item">
+            <input id="form-target-weight" class="form-target__input" type="radio" name="form-target" value="form-target-weight">
+            <label class="form-target__input-label" for="form-target-weight">Набор массы</label>
+          </li>
+          <li class="form-target__item">
+            <input id="form-target-other" class="form-target__input" type="radio" name="form-target" value="form-target-other">
+            <label class="form-target__input-label" for="form-target-other">Не знаю (Нужен ваш совет)</label>
+          </li>
+        </ul>
+      </section>
     </div>
     <section class="form-contacts">
       <div class="form-contacts__wrapper container">
-      <h3 class="form-contacts__title">Контактные данные (владельца кота)</h3>
-      <ul class="form-contacts__list">
-        <li class="form-contacts__item">
-          <label class="form-contacts__input-label" for="form-contacts-email">E-mail:*</label>
-          <input id="form-contacts-email" class="form-contacts__email-input input" type="email" name="form-contacts-email" placeholder="kuklachev@gmail.com" required>
-          <svg class="form-contacts__icon" width="18" height="13">
-            <use href="img/sprite.svg#icon-mail"></use>
-          </svg>
-        </li>
-        <li class="form-contacts__item">
-          <label class="form-contacts__input-label" for="form-contacts-phone">Телефон:*</label>
-          <input id="form-contacts-phone" class="form-contacts__email-input input" type="tel" name="form-contacts-phone" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="8 (960) 900-60-90" required>
-          <svg class="form-contacts__icon form-contacts__icon--phone" width="20" height="20">
-            <use href="img/sprite.svg#icon-phone"></use>
-          </svg>
-        </li>
-      </ul>
+        <h3 class="form-contacts__title">Контактные данные (владельца кота)</h3>
+        <ul class="form-contacts__list">
+          <li class="form-contacts__item">
+            <label class="form-contacts__input-label" for="form-contacts-email">E-mail:*</label>
+            <input id="form-contacts-email" class="form-contacts__email-input input" type="email" name="form-contacts-email" placeholder="kuklachev@gmail.com" required>
+            <svg class="form-contacts__icon" width="18" height="13">
+              <use href="img/sprite.svg#icon-mail"></use>
+            </svg>
+          </li>
+          <li class="form-contacts__item">
+            <label class="form-contacts__input-label" for="form-contacts-phone">Телефон:*</label>
+            <input id="form-contacts-phone" class="form-contacts__email-input input" type="tel" name="form-contacts-phone" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="8 (960) 900-60-90" required>
+            <svg class="form-contacts__icon form-contacts__icon--phone" width="20" height="20">
+              <use href="img/sprite.svg#icon-phone"></use>
+            </svg>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="form-comment">
       <div class="form-comment__wrapper container">
-      <h3 class="form-comment__title">Комментарий</h3>
-      <textarea id="form-comment-description" class="form-comment__description" name="form-comment-description" placeholder="Расскажите обо всех повАдках кота" rows="5" cols="20"></textarea>
+        <h3 class="form-comment__title">Комментарий</h3>
+        <textarea id="form-comment-description" class="form-comment__description" name="form-comment-description" placeholder="Расскажите обо всех повАдках кота" rows="5" cols="20"></textarea>
       </div>
     </section>
     <section class="form-addition">
       <div class="form-addition__wrapper">
-      <h3 class="form-addition__title">Дополнительно</h3>
-      <ul class="form-addition__list">
-        <li class="form-addition__item">
-          <input id="form-addition-sugar" class="form-addition__input" type="checkbox" name="form-addition-sugar" checked>
-          <label class="form-addition__input-label" for="form-addition-sugar">Сахарозаменитель</label>
-          <svg class="form-addition__icon" width="18" height="14">
-            <use href="img/sprite.svg#icon-tick"></use>
-          </svg>
-        </li>
-        <li class="form-addition__item">
-          <input id="form-addition-water" class="form-addition__input" type="checkbox" name="form-addition-water">
-          <label class="form-addition__input-label" for="form-addition-water">Питьевая вода</label>
-          <svg class="form-addition__icon" width="18" height="14">
-            <use href="img/sprite.svg#icon-tick"></use>
-          </svg>
-        </li>
-        <li class="form-addition__item">
-          <input id="form-addition-milk" class="form-addition__input" type="checkbox" name="form-addition-milk">
-          <label class="form-addition__input-label" for="form-addition-milk">Молоко</label>
-          <svg class="form-addition__icon" width="18" height="14">
-            <use href="img/sprite.svg#icon-tick"></use>
-          </svg>
-        </li>
-        <li class="form-addition__item">
-          <input id="form-addition-vitamins" class="form-addition__input" type="checkbox" name="form-addition-vitamins">
-          <label class="form-addition__input-label" for="form-addition-vitamins">Витамины</label>
-          <svg class="form-addition__icon" width="18" height="14">
-            <use href="img/sprite.svg#icon-tick"></use>
-          </svg>
-        </li>
-      </ul>
+        <h3 class="form-addition__title">Дополнительно</h3>
+        <ul class="form-addition__list">
+          <li class="form-addition__item">
+            <input id="form-addition-sugar" class="form-addition__input" type="checkbox" name="form-addition-sugar" checked>
+            <label class="form-addition__input-label" for="form-addition-sugar">Сахарозаменитель</label>
+            <svg class="form-addition__icon" width="18" height="14">
+              <use href="img/sprite.svg#icon-tick"></use>
+            </svg>
+          </li>
+          <li class="form-addition__item">
+            <input id="form-addition-water" class="form-addition__input" type="checkbox" name="form-addition-water">
+            <label class="form-addition__input-label" for="form-addition-water">Питьевая вода</label>
+            <svg class="form-addition__icon" width="18" height="14">
+              <use href="img/sprite.svg#icon-tick"></use>
+            </svg>
+          </li>
+          <li class="form-addition__item">
+            <input id="form-addition-milk" class="form-addition__input" type="checkbox" name="form-addition-milk">
+            <label class="form-addition__input-label" for="form-addition-milk">Молоко</label>
+            <svg class="form-addition__icon" width="18" height="14">
+              <use href="img/sprite.svg#icon-tick"></use>
+            </svg>
+          </li>
+          <li class="form-addition__item">
+            <input id="form-addition-vitamins" class="form-addition__input" type="checkbox" name="form-addition-vitamins">
+            <label class="form-addition__input-label" for="form-addition-vitamins">Витамины</label>
+            <svg class="form-addition__icon" width="18" height="14">
+              <use href="img/sprite.svg#icon-tick"></use>
+            </svg>
+          </li>
+        </ul>
       </div>
     </section>
     <div class="form__wrapper-button-note">

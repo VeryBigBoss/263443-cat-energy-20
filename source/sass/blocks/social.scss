@@ -17,11 +17,16 @@
     justify-self: center;
     justify-content: space-between;
     margin-left: 159px;
-    margin-right: 131px;
+    margin-right: 128px;
+    margin-bottom: 6px;
     padding: 0;
     width: 129px;
     height: 34px;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 125px;
   }
 }
 

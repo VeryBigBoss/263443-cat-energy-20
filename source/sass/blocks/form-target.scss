@@ -147,3 +147,7 @@
     height: 18px;
   }
 }
+
+.form-target__input:focus + .form-target__input-label::before {
+  box-shadow: 0 0 4px 2px $main-green;
+}

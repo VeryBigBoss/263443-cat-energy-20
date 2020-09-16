@@ -6,10 +6,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    //justify-content: space-between;
     align-items: center;
     margin-bottom: 6px;
-    min-width: 443px;
     min-height: 40px;
   }
 
@@ -55,7 +53,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-left: 35px;
+    margin-left: 36px;
     min-height: 40px;
 
     &:first-child::before {
@@ -68,6 +66,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 35px;
     min-height: 40px;
   }
 }
